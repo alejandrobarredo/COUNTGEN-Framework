@@ -1,0 +1,6 @@
+**/venv
+**/images
+*.png
+*.jpg
+**/data
+**/dataset
