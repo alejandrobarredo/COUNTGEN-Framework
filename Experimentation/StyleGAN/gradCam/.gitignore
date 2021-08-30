@@ -1,0 +1,5 @@
+*.h5
+*.hdf5
+.vscode
+.pyc
+__pycache__
