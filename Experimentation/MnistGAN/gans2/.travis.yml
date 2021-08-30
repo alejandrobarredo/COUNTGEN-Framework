@@ -1,0 +1,12 @@
+language: python
+python:
+  - "3.6"      # current default Python on Travis CI
+install:
+  - pip install -r requirements/requirements.txt
+  - pip install -r requirements/requirements-cpu.txt
+# command to run tests
+script:
+  - pytest --cov-report=xml --cov=gans tests/
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
