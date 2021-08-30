@@ -1,0 +1,69 @@
+----------------- Options ---------------
+               batch_size: 2                             
+                    beta1: 0.5                           
+              center_crop: False                         
+          checkpoints_dir: ./checkpoints_pruebas/edges2shoes/	[default: ./checkpoints]
+            conditional_D: False                         
+           continue_train: False                         
+                crop_size: 256                           
+                 dataroot: ./datasets/edges2shoes        	[default: None]
+             dataset_mode: aligned                       
+                direction: AtoB                          
+              display_env: main                          
+             display_freq: 400                           
+               display_id: 1                             
+            display_ncols: 4                             
+             display_port: 8097                          
+           display_server: 127.0.0.1                     
+          display_winsize: 256                           
+                    epoch: latest                        
+              epoch_count: 1                             
+                 gan_mode: lsgan                         
+                  gpu_ids: 0                             
+                init_gain: 0.02                          
+                init_type: xavier                        
+                 input_nc: 1                             	[default: 3]
+                  isTrain: True                          	[default: None]
+               lambda_GAN: 1.0                           
+              lambda_GAN2: 1.0                           
+                lambda_L1: 10.0                          
+                lambda_kl: 0.01                          
+                 lambda_z: 0.5                           
+                load_size: 256                           	[default: 286]
+                       lr: 0.0002                        
+           lr_decay_iters: 100                           
+                lr_policy: linear                        
+         max_dataset_size: inf                           
+                    model: bicycle_gan                   
+                     name: edges2shoes_bicycle_gan       	[default: ]
+                      ndf: 64                            
+                      nef: 64                            
+                     netD: basic_256_multi               
+                    netD2: basic_256_multi               
+                     netE: resnet_256                    
+                     netG: unet_256                      
+                      ngf: 64                            
+                    niter: 30                            	[default: 100]
+              niter_decay: 30                            	[default: 100]
+                       nl: relu                          
+                  no_flip: False                         
+                  no_html: False                         
+                     norm: instance                      
+                   num_Ds: 2                             
+              num_threads: 4                             
+                       nz: 8                             
+                output_nc: 3                             
+                    phase: train                         
+               preprocess: resize_and_crop               
+               print_freq: 100                           
+          save_epoch_freq: 5                             
+         save_latest_freq: 10000                         
+           serial_batches: False                         
+                   suffix:                               
+         update_html_freq: 4000                          
+                 upsample: basic                         
+              use_dropout: True                          	[default: False]
+               use_same_D: False                         
+                  verbose: False                         
+                where_add: all                           
+----------------- End -------------------
