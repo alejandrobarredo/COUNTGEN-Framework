@@ -4,3 +4,7 @@
 *.jpg
 **/data
 **/dataset
+**/datasets/
+**/outputs/
+**.npy
+**.pkl
